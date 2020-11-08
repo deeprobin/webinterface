@@ -1,7 +1,7 @@
 <script lang="typescript">
     import PluginComponent from "../components/PluginComponent.svelte";
-    import {PluginTab} from "../model/plugin-tab";
-    import {PluginInfo} from "../model/plugin-info";
+    import {PluginTab} from "../model/PluginTab";
+    import {PluginInfo} from "../model/PluginInfo";
     import { _ } from 'svelte-i18n';
 
     let currentTab: PluginTab = PluginTab.InstalledPlugins;
