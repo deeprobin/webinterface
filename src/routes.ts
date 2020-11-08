@@ -6,6 +6,7 @@ import QueryEditor from './pages/QueryEditor.svelte';
 import Profile from './pages/Profile.svelte';
 import Database from './pages/database/Database.svelte';
 import ServerSettings from './pages/ServerSettings.svelte';
+import UserManagement from './pages/UserManagement.svelte';
 
 const routes = {
     '/': Home,
@@ -14,6 +15,7 @@ const routes = {
     '/editor': QueryEditor,
     '/profile': Profile,
     '/plugins': Plugins,
+    '/users': UserManagement,
     '/database/:databaseName': Database,
     '/server-settings': ServerSettings,
 }
