@@ -14,4 +14,18 @@ export class ProfileGateway {
     async getLastLogin(): Promise<Date> {
         return null;
     }
+
+    async rename(newUsername: string): Promise<void> {
+        return null;
+    }
+
+    async changePassword(newPassword: string): Promise<void> {
+        // encode as UTF-8
+        const passwordBuffer = new TextEncoder().encode(newPassword);  
+        
+        // client-side hashing
+        const digest = crypto.subtle.digest("SHA-512", passwordBuffer);
+        
+        // TODO: send request
+    }
 }
